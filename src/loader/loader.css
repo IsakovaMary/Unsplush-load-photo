@@ -1,0 +1,40 @@
+:root{
+    --logo-size:30px;
+    --logo-half-size:30px;
+}
+.preloader__image_animate{
+    background-image: url(./loader.png);
+    background-size: var(--logo-size) var(--logo-size);
+    width: var(--logo-size);
+    height: var(--logo-size);
+    position: absolute;
+    top: calc(50% - var(--logo-half-size));
+    left: calc(50% - var(--logo-half-size));
+    transition: 1s linear;
+    animation: up-down 2s infinite; /* Название анимации up-down */
+}
+
+@keyframes up-down{
+  0%{
+      top: calc(50% - var(--logo-half-size));
+  }
+  0%{
+      top: calc(50% - 10px);
+  }
+  75%{
+      top: calc(50%); 
+  }
+  100%{
+      top: calc(50% - 10px);
+  }
+  from{
+      -webkit-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  to{
+      -webkit-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+  }
+}
