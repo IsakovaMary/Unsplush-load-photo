@@ -22,7 +22,7 @@ const Main = () =>  {
 
     const onKeyDown = e => {
         if(e.key === 'Enter') {
-            axios.get(`https://api.unsplash.com/search/photos?page=1&query=${photo}&client_id=4UhQL7IdZ55_AGB-WhQQNVlxTwun4XNQI0lXn6L-gqM`)
+            axios.get(`https://api.unsplash.com/search/photos?page=1&query=${photo}&client_id=Ip0XA55zY7b7-d19osq1L5btGg-YCeDZVpnnJjXqHxs`)
             .then((response) => {
                 console.log(response.data);
                 setResult(response.data.results);
